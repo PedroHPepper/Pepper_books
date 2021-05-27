@@ -155,7 +155,6 @@ F:\Pedro\Projetos\Pepper_Books\obj\Debug\net5.0\ref\Pepper_Books.dll
 F:\Pedro\Projetos\Pepper_Books\obj\Debug\net5.0\Pepper_Books.pdb
 F:\Pedro\Projetos\Pepper_Books\obj\Debug\net5.0\Pepper_Books.genruntimeconfig.cache
 F:\Pedro\Projetos\Pepper_Books\bin\Debug\net5.0\Pepper_Books.Views.dll
-F:\Pedro\Projetos\Pepper_Books\bin\Debug\net5.0\Pepper_Books.Views.pdb
 F:\Pedro\Projetos\Pepper_Books\bin\Debug\net5.0\Microsoft.AspNetCore.JsonPatch.dll
 F:\Pedro\Projetos\Pepper_Books\bin\Debug\net5.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
 F:\Pedro\Projetos\Pepper_Books\bin\Debug\net5.0\Newtonsoft.Json.Bson.dll

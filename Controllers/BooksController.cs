@@ -29,7 +29,14 @@ namespace Pepper_Books.Controllers
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Book>>> GetBook()
         {
-            return await _context.Book.ToListAsync();
+            try
+            {
+                return await _context.Book.ToListAsync();
+            }
+            catch(Exception e)
+            {
+                return BadRequest(e);
+            }
         }
 
         /// <summary>
@@ -105,26 +112,6 @@ namespace Pepper_Books.Controllers
             return CreatedAtAction("GetBook", new { id = book.Id }, book);
         }
 
-        /// <summary>
-        /// exclui do um livro do BD usando o ID dele
-        /// </summary>
-        /// <param name="id">id do livro a ser excluído</param>
-        /// <returns>retorna um campo vazio</returns>
-        // DELETE: api/Books/5
-        [HttpDelete("{id}")]
-        public async Task<IActionResult> DeleteBook(int id)
-        {
-            var book = await _context.Book.FindAsync(id);
-            if (book == null)
-            {
-                return NotFound();
-            }
-
-            _context.Book.Remove(book);
-            await _context.SaveChangesAsync();
-
-            return NoContent();
-        }
 
         /// <summary>
         /// Verifica se o livro existe usando uma Id
